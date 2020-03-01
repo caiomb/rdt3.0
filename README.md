@@ -8,18 +8,27 @@ processa e as trata respondendo ACKs para o sender.
 
 ## Execução do receiver:
 Para executar o receiver digite no terminal: python3 receiver.py -porta PORTA
+
 Os argumentos válidos são:
+
 	-porta:  Porta do receiver com valores válidos entre 10001 e 11000.
 
 ## Execução do sender:
 Para executar o sender digite no terminal:
+	
 	python3 sender.py -ip IP -porta PORTA -nmsg NMSG
+
 Os argumentos válidos são:
- 	-ip:	IP do receiver.
- 	-porta:	Porta do receiver. Valores válidos entre 10001 e 11000.
- 	-nmsg:	Número de mensagens a serem enviadas.
+ 	
+	-ip:	IP do receiver.
+ 	
+	-porta:	Porta do receiver. Valores válidos entre 10001 e 11000.
+ 	
+	-nmsg:	Número de mensagens a serem enviadas.
 
 ## Help:
 Para acessar uma explicação básica de como executar os arquivos, digite no terminal:
+	
 	python3 sender.py -h
+	
 	python3 receiver.py -h
