@@ -1,4 +1,4 @@
-## Protocolo rdt3.0 sobre sockets UDP
+# Protocolo rdt3.0 sobre sockets UDP
 O projeto consiste na implementação do protocolo rdt (entrega confiável de dados)
 a nível de aplicação sobre sockets UDP. Nesta versão não há checagem de checksum
 das mensagens, pois isso já é feito pelo UDP, desta forma há uma simplificação
