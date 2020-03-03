@@ -76,10 +76,10 @@ while sent_messages <= n_msgs:
 
         # Neste ponto a mensagem foi enviada e uma resposta foi recebida, então deve-se fazer
         # o parser da mensagem recebida
-        ACK = response[0:1]
-        ACKno = response[1:2]
+        ACK = int(response.decode()[0])
+        ACKno = int(response.decode()[1])
 
-        if int(ACK) and (int(ACKno) == sequence):
+        if ACK and (ACKno == sequence):
             # Se o ACK recebido for verdadeiro e o valor da sequência recebido
             # for igual ao enviado, então o envio de dados ocorreu com sucesso.
             # Neste caso deve-se printar a mensagem e inverter o bit de sequência

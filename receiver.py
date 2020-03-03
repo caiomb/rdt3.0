@@ -40,9 +40,9 @@ while True:
     # Recebendo uma mensagem
     message, sender_address = receiver_socket.recvfrom(2048)
     # Parser da mensagem recebida
-    recv_sequence = int(message[0:1])
-    recv_data = int(message[1:2])
-    recv_nmsgs = int(message[2:])
+    recv_sequence = int(message.decode()[0])
+    recv_data = int(message.decode()[1])
+    recv_nmsgs = int(message.decode()[2])
 
     if recv_sequence == sequence:
         # Se o valor de sequência recebido for igual ao esperado,
