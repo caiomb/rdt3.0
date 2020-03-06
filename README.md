@@ -32,3 +32,8 @@ Para acessar uma explicação básica de como executar os arquivos, digite no te
 	python3 sender.py -h
 	
 	python3 receiver.py -h
+
+## Download:
+O projeto pode ser obtido atraves do seguinte link:
+
+	https://github.com/caiomb/rdt3.0.git
